@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="mp uap build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    ESTE ARCHIVO DE MANIFIESTO DEL PAQUETE SE GENERA MEDIANTE EL PROCESO DE COMPILACIÓN.
+
+    Los cambios realizados en el archivo se perderán al regenerarlo. Para corregir los errores de este archivo, edite el archivo de origen .appxmanifest.
+
+    Para obtener más información acerca de los archivos de manifiesto del paquete, vea http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="40411fc5-8e92-4d46-b68d-b62df44b1366" Publisher="CN=Fran" Version="1.0.1.0" ProcessorArchitecture="x64" />
+  <mp:PhoneIdentity PhoneProductId="40411fc5-8e92-4d46-b68d-b62df44b1366" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>ReactTestApp</DisplayName>
+    <PublisherDisplayName>ReactTestApp</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+    <PackageDependency Name="Microsoft.UI.Xaml.2.8" MinVersion="8.2207.14002.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug.UWPDesktop" MinVersion="14.0.33728.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.33519.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="ReactTestApp.exe" EntryPoint="ReactTestApp.App">
+      <uap:VisualElements DisplayName="ReactTestApp" Description="React Native test app for C++/WinRT Universal Windows Platform (UWP)" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"></uap:DefaultTile>
+        <uap:SplashScreen BackgroundColor="#151021" Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>ReactNativeFs.dll</Path>
+        <ActivatableClass ActivatableClassId="ReactNativeFs.ReactPackageProvider" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Microsoft.Web.WebView2.Core.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Web.WebView2.Core.CoreWebView2EnvironmentOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Web.WebView2.Core.CoreWebView2Controller" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Web.WebView2.Core.CoreWebView2CompositionController" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Web.WebView2.Core.CoreWebView2ControllerWindowReference" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Web.WebView2.Core.CoreWebView2Environment" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="cl.exe" Version="19.40.33811.0" />
+    <build:Item Name="CodeSharingProject" Value="248F659F-DAC5-46E8-AC09-60EC9FC95053" />
+    <build:Item Name="TargetFrameworkMoniker" Value="native,Version=v0.0" />
+    <build:Item Name="VisualStudio" Version="17.0" />
+    <build:Item Name="OperatingSystem" Version="10.0.22621.2860 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.10.40149.44711" />
+    <build:Item Name="ProjectGUID" Value="{b44cead7-fbff-4a17-95ea-ff5434bbd79d}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Native" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.19041.685" />
+    <build:Item Name="MakePri.exe" Version="10.0.19041.685 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

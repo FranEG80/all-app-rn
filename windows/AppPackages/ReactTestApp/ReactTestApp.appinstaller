@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp.appinstaller"
+	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="40411fc5-8e92-4d46-b68d-b62df44b1366"
+		Version="1.0.0.0"
+		Publisher="CN=ReactTestApp"
+		Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/ReactTestApp_1.0.0.0_x86_x64.msixbundle" />
+	<Dependencies>
+		<Package
+			Name="Microsoft.UI.Xaml.2.8"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x86/Microsoft.UI.Xaml.2.8.appx"
+			Version="8.2207.14002.0" />
+		<Package
+			Name="Microsoft.UI.Xaml.2.8"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x64/Microsoft.UI.Xaml.2.8.appx"
+			Version="8.2207.14002.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.UWPDesktop"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+			Version="14.0.33728.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00.UWPDesktop"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.Desktop.appx"
+			Version="14.0.33728.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x64"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Version="14.0.33519.0" />
+		<Package
+			Name="Microsoft.VCLibs.140.00"
+			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+			ProcessorArchitecture="x86"
+			Uri="file://wsl.localhost/Ubuntu-feg/home/fran/ReactTestApp_1.0.0.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
+			Version="14.0.33519.0" />
+	</Dependencies>
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
